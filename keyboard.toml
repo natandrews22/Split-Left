@@ -6,6 +6,18 @@ product_id = 0x4643
 manufacturer = "Nathan"
 chip = "nrf52840"
 
+[host]
+# Whether Vial is enabled (default: true)
+vial_enabled = true
+# The unlock keys are the combo of the row 0, col 0 key and
+# the row 0, col 1 key
+unlock_keys = [[0, 0], [1, 1]]
+
+
+[ble]
+enabled = true
+
+
 [matrix]
 row_pins = [
     "P0_17",
@@ -32,9 +44,17 @@ col_pins = [
 [layout]
 rows = 6
 cols = 7
-layers = 1
+layers = 2
 
 keymap = [
+    [
+        ["Esc", "F1", "F2", "F3", "F4", "F5", "F6"],
+        ["Tab", "A", "W", "E", "R", "T", "Y"],
+        ["CapsLock", "A", "S", "D", "F", "G", "H"],
+        ["LShift", "Z", "X", "C", "V", "B", "N"],
+        ["LCtrl", "LGui", "LAlt", "Space", "RAlt", "Menu", "RCtrl"],
+        ["_", "_", "_", "_", "_", "_", "_"]
+    ],
     [
         ["Esc", "F1", "F2", "F3", "F4", "F5", "F6"],
         ["Tab", "Q", "W", "E", "R", "T", "Y"],
