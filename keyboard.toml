@@ -52,7 +52,7 @@ name = "Base"
 
 keys = """
 Esc F1 F2 F3 F4 F5 F6
-~ 1 2 3 4 5 6
+KC_GRV 1 2 3 4 5 6
 Tab Q W E R T Y
 CapsLock A S D F G H
 LShift Z X C V B N
