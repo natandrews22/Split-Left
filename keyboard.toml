@@ -17,26 +17,20 @@ unlock_keys = [[0, 0], [1, 1]]
 [ble]
 enabled = true
 
+# nice!nano v2 battery monitoring
+battery_adc_pin = "vddh"
+
+# nice!nano voltage divider values
+adc_divider_measured = 2000
+adc_divider_total = 2806
+
+default_tx_power = 0
+ble_use_2m_phy = true
+
 
 [matrix]
-row_pins = [
-    "P0_17",
-    "P0_20",
-    "P0_22",
-    "P1_00",
-    "P0_11",
-    "P1_04"
-]
-
-col_pins = [
-    "P0_09",
-    "P0_10",
-    "P0_29",
-    "P0_31",
-    "P1_01",
-    "P1_02",
-    "P1_07"
-]
+row_pins = ["P0_17","P0_20","P0_22","P1_00","P0_11","P1_04"]
+col_pins = ["P0_09","P0_10","P0_29","P0_31","P1_01","P1_02","P1_07"]
 
 # Uncomment if your diodes point from row to column
 # row2col = true
