@@ -13,7 +13,6 @@ vial_enabled = true
 # the row 0, col 1 key
 unlock_keys = [[0, 0], [1, 1]]
 
-
 [ble]
 enabled = true
 
@@ -26,7 +25,6 @@ adc_divider_total = 2806
 
 default_tx_power = 0
 ble_use_2m_phy = true
-
 
 [matrix]
 row_pins = ["P0_17","P0_20","P0_22","P1_00","P0_11","P1_04"]
